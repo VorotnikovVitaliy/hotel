@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css?ver=2">
+
+    <!-- Иконка на закладках -->
+
+    <link rel="icon" href="img/logo.svg" type="image/x-icon">
+
+    <title>Bon Hotel</title>
+</head>
+<body>
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg header">
+        <div class="container header-block">
+          <a class="navbar-brand logo mr-0" href="#"><img class="logo-img" src="img/logo.svg" alt="#"></a>
+          <button class="navbar-toggler hamburger hamburger--squeeze" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav header-navbar">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Наш отель</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Номера и цены</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Удобства</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <!-- form -->
+    <form action="#" class="form-reservation">
+      <div class="container">
+        <div class="form-inputs">
+          <input type="text" class="form-control form-item" placeholder="ФИО" aria-label="ФИО" aria-describedby="basic-addon1">
+          <select class="form-select form-item" aria-label="Количество людей">
+            <option selected>Количество людей</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <input type="date" class="form-control form-item" placeholder="Дата заселения" aria-label="Дата заселения" aria-describedby="basic-addon2">
+          <input type="date" class="form-control form-item" placeholder="Дата выселения" aria-label="Дата выселения" aria-describedby="basic-addon3">
+          <button type="submit" class="form-submit form-item"><p>Забронировать</p></button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Кнопка-триггер мобильной формы -->
+    <div class="button-mobile-form__block">
+      <button type="button" class="button-mobile-form form-item" data-bs-toggle="modal" data-bs-target="#exampleModal">Забронировать номер</button>
+    </div>
+
+    <!-- Модальное окно -->
+    <div class="modal fade modal-mobile-form" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="container modal-body">
+          <div class="form-inputs mobile">
+            <input type="text" class="form-control form-item" placeholder="ФИО" aria-label="ФИО" aria-describedby="basic-addon1">
+            <select class="form-select form-item" aria-label="Количество людей">
+              <option selected>Количество людей</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <input type="date" class="form-control form-item" placeholder="Дата заселения" aria-label="Дата заселения" aria-describedby="basic-addon2">
+            <input type="date" class="form-control form-item" placeholder="Дата выселения" aria-label="Дата выселения" aria-describedby="basic-addon3">
+            <button type="submit" class="form-submit form-item"><p>Забронировать</p></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="preview-main-block">
+      <img src="img/ls_dropdown.png" alt="#" class="preview-figure">
+      <div class="container">
+        <div class="preview-block-content">
+          <h1 class="preview-block-content__h">Добро пожаловать в BON HOTEL</h1>
+          <p class="preview-block-content__p">Хорошие люди. Хорошие мысли. Хорошие чувства.</p>
+          <div class="preview-block-content__a">
+            <a href="#">Узнать</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="facilities-main-block">
+      <div class="facilities-block">
+        <div class="container">
+          <div class="facilities-block-content">
+            <h2 class="facilities-block-content__h">Удобства</h2>
+            <div class="facilities-block-content__items">
+              <div class="facilities-block-content__item">
+                <img src="img/dashicons_editor-kitchensink.svg" alt="#" class="facilities-block-content__item-icon">
+                <p class="facilities-block-content__item-text">Кухня</p>
+              </div>
+              <div class="facilities-block-content__item">
+                <img src="img/ic_twotone-pool.svg" alt="#" class="facilities-block-content__item-icon">
+                <p class="facilities-block-content__item-text">Бассейн</p>
+              </div>
+              <div class="facilities-block-content__item">
+                <img src="img/clarity_wifi-solid.svg" alt="#" class="facilities-block-content__item-icon">
+                <p class="facilities-block-content__item-text">WiFi</p>
+              </div>
+              <div class="facilities-block-content__item">
+                <img src="img/maki_fitness-centre-11.svg" alt="#" class="facilities-block-content__item-icon">
+                <p class="facilities-block-content__item-text">Тренажерный зал</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rooms-main-block">
+      <div class="container">
+        <div class="rooms-content">
+          <h2 class="rooms-content-title">Номера</h2>
+          <div class="rooms-content-items">
+            <div class="rooms-content-item">
+              <img src="img/item1.jpg" alt="#" class="rooms-content-item__img-bg">
+              <div class="rooms-content-item__img-bg-overlay"></div>
+              <div class="rooms-content-item__content">
+                <h3 class="rooms-content-item__content-title">Стандартный двухместный номер</h3>
+                <div class="rooms-content-item__content-button">
+                  <a href="#">Посмотреть цену</a>
+                </div>
+              </div>
+            </div>
+            <div class="rooms-content-item">
+              <img src="img/item2.jpg" alt="#" class="rooms-content-item__img-bg">
+              <div class="rooms-content-item__img-bg-overlay"></div>
+              <div class="rooms-content-item__content">
+                <h3 class="rooms-content-item__content-title">Стандартный номер</h3>
+                <div class="rooms-content-item__content-button">
+                  <a href="#">Посмотреть цену</a>
+                </div>
+              </div>
+            </div>
+            <div class="rooms-content-item">
+              <img src="img/item3.jpg" alt="#" class="rooms-content-item__img-bg">
+              <div class="rooms-content-item__img-bg-overlay"></div>
+              <div class="rooms-content-item__content">
+                <h3 class="rooms-content-item__content-title">Стандартный номер с видом на море</h3>
+                <div class="rooms-content-item__content-button">
+                  <a href="#">Посмотреть цену</a>
+                </div>
+              </div>
+            </div>
+            <div class="rooms-content-item">
+              <img src="img/item4.jpg" alt="#" class="rooms-content-item__img-bg">
+              <div class="rooms-content-item__img-bg-overlay"></div>
+              <div class="rooms-content-item__content">
+                <h3 class="rooms-content-item__content-title">Номер Делюкс</h3>
+                <div class="rooms-content-item__content-button">
+                  <a href="#">Посмотреть цену</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-main-block">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo-block">
+            <img src="img/logo.svg" alt="#" class="footer-logo">
+          </div>
+          <div class="footer-content-subcribe">
+            <h3 class="footer-content-subcribe__title">Оформляйте подписку на предложения</h3>
+            <input type="email" class="form-control form-item footer-input" placeholder="Email">
+            <button type="submit" class="form-submit form-item footer-button">Подписаться</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS Script -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
